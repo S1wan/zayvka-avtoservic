@@ -7,6 +7,7 @@
     <title>заявка</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adactaktiv.css">
+    <link rel="stylesheet" href="css/mail.php">
 </head>
 <body class="body_body">
     <header class="header_one">
@@ -17,16 +18,18 @@
                     <br>Акт осмотра автомобиля
                     </h1>
                 </div>
-                    <div class="kvadrat_one">
-                        <div contenteditable="true" class="container_text_header">
-                            <input placeholder="№ заказа-наряда" class="input_text_one" type="text">
+                    <form action="css/mail.php" method="POST" >
+                        <div class="kvadrat_one">
+                            <div contenteditable="true" class="container_text_header">
+                                <input placeholder="№ заказа-наряда" name="zakaz" class="input_text_one" type="text">
+                            </div>
                         </div>
-                    </div>
-                    <div class="kvadrat_two">
-                        <div contenteditable="true" class="container_text_header_one">
-                            <input placeholder="Дата" class="input_text_two" type="date">
+                        <div class="kvadrat_two">
+                            <div contenteditable="true" class="container_text_header_one">
+                                <input placeholder="Дата" name="data" class="input_text_two" type="date">
+                            </div>
                         </div>
-                    </div>
+                    </form>
             </div>
         </div>
         <hr>
@@ -1125,6 +1128,9 @@
                         <div contenteditable="true" class="container_trebuetsyay">
                             <input placeholder=" " class="input_text_one" type="text">
                         </div>
+                        <form action="buttom">
+                        <button type="button" name="buttom" class="buttom_buttom">Отправить!</button>
+                        </form>
     </div>
 </html>
 </body>

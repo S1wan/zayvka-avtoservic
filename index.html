@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/adactaktiv.css">
     <link rel="stylesheet" href="css/mail.php">
 </head>
+<form action="css/mail.php" method="POST" >
 <body class="body_body">
     <header class="header_one">
         <div class="header_top">
@@ -18,7 +19,6 @@
                     <br>Акт осмотра автомобиля
                     </h1>
                 </div>
-                    <form action="css/mail.php" method="POST" >
                         <div class="kvadrat_one">
                             <div contenteditable="true" class="container_text_header">
                                 <input placeholder="№ заказа-наряда" name="zakaz" class="input_text_one" type="text">
@@ -29,19 +29,16 @@
                                 <input placeholder="Дата" name="data" class="input_text_two" type="date">
                             </div>
                         </div>
-                    </form>
             </div>
         </div>
         <hr>
     </header>
     <div class="body_nomera_one">
-            <form class="marka" action="">
                 Марка, модель автомобилия <input class="marka_one" type="text"> 
-            </form>
             <br>
-            <form class="gos_nomer" action="">
+            <br>
              Гос. номер <input type="text"> Пробег <input class="probeg" type="text">
-            </form>
+            <br>
             <br>
             <div class="prichina">
                 <div contenteditable="true" class="prichina_one">
@@ -459,25 +456,23 @@
             <div class="wrapper_podkapot_two">
                 <h4 class="sostoianie_yroven">Состояние/уровень</h4>     
                             <div class="zaryadka">Приводные ремни:
-                            <form class="generator" action="">
+                           
                                 Генератор <input class="generator_one" type="text"> 
-                            </form>
-                            <form class="kondicioner" action="">
+                          
                                 Кондиционер <input class="condicioner_one" type="text"> 
-                            </form>
-                            <form class="gyr" action="">
+                           
                                 ГУР <input class="gyr_one" type="text"> 
-                            </form>
+                           
                             <br>
                             Радиаторы, патрубки, соединения
-                            <form class="radiator" action="">
+                            
                                 <input class="radiator_one" type="text"> 
-                            </form>
+                            
                             <br>
                             Работа двс (запуск,стабильность, шумы)
-                            <form class="hym" action="">
+                           
                                 <input class="hym_one" type="text"> 
-                            </form>
+                          
                             
                             <p>
                                 Аккумуляторная батарея
@@ -527,13 +522,10 @@
             </div>
             <h2 class="diagnostika_avtomobilia">Диагностика автомобиля</h2>
             <div class="body_nomera_foo">
-                <form class="marka" action="">
                     Марка, модель автомобилия <input class="marka_one" type="text"> 
-                </form>
                 <br>
-                <form class="gos_nomer" action="">
+                <br>
                  Гос. номер <input type="text"> З/н №<input class="z/n nomer" type="text">
-                </form>
             </div>
             <div class="kvadrat_five">
                     <h3>Левая сторона</h3>
@@ -1114,9 +1106,7 @@
                                 </select>
                                 <div class="germetochnost">
                                     <h4>Герметичность, течи, запотевания</h4>
-                                    <form class="ooo" action="">
                                         <input class="hym_one" type="text"> 
-                                    </form>
                                 </div>
                             </div>
                     </div>
@@ -1128,10 +1118,9 @@
                         <div contenteditable="true" class="container_trebuetsyay">
                             <input placeholder=" " class="input_text_one" type="text">
                         </div>
-                        <form action="buttom">
-                        <button type="button" name="buttom" class="buttom_buttom">Отправить!</button>
-                        </form>
-    </div>
+                        <input type="submit" class="buttom_buttom" value="Отправить" >
+        </div>
+                </form>
 </html>
 </body>
 </html>
